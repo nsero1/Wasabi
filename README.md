@@ -20,6 +20,35 @@ Ovakav program će korisniku omogućiti efikasnije poslovanje, pogotovo ako je r
 o većim prodajnim centrima, gdje je količina robe znatno veća. Samim tim evidencija
 postaje težak zadatak koji zahtijeva dodatnu radnu snagu i resurse.
 
+##Procesi
+### Dodavanje, modifikovanje i uklanjanje dostupnih artikala i informacija o njima 
+Proces koji obuhvata sveukupno vodjenje inventara prodavnice. Korisnici sa pravom 
+pristupa menadzera ili vise imaju uvid u sve artikle koje prodavnica ima na raspolaganju, 
+mogucnost dodavanja novih artikala ili brisanje onih koji vise nisu potrebni i izmjenu
+informacija o vec postojecim artiklima. Sve izmjene u inventaru prodavnice se biljeze i 
+dostupne su direktoru na uvid.
+
+### Pretraga inventara
+Omogucava svim korisnicima pretragu dostupnih artikala i prikaz informacija o njima. U
+slucaju da trazeni artikal nije trenutno na stanju, korisniku se nudi opcija narudzbe
+trazenog artikla, ukoliko je to moguce, i prikaz informacija o ocekivanom vremenu dostave.
+
+### Dodavanje, brisanje i modifikacija uposlenika
+Pruza mogucnost direktoru da dodaje nove uposlenike, brise stare i mijenja informacije o
+vec postojecim. Takodjer, nudi mogucnost izmjene nivoa pristupa kod uposlenika.
+
+### Pracenje dolaska/odlaska uposlenika iz prodavnice
+Omogucava uposlenicima da se prijave u sistem kada dodju na radno mjesto i kada zavrse sa
+radnim vremenom i napuste prodavnicu. Svi dolasci/odlasci se biljeze u sistem, sa datumima,
+radnim satima, eventualnim prijevremenim odlascima i drugim statistickim podacima. Ovo 
+omogucava nadredjenima da prate radno vrijeme svojih uposlenika, da li ispunjavaju svoje
+radne obaveze itd., u svrhu boljeg funkcionisanja cijelog kolektiva.
+
+### Podnosenje izvjestaja
+Pruza mogucnost podnosenja izvjestaja nadredjenima. Izvjestaji se automatski proslijedjuju
+korisnicima kojima trebaju da dodju (npr., izvjestaj supervizora dolazi njegovom menadzeru,
+menadzera direktoru, itd.).
+
 ## Funkcionalnosti
 * Pri prodaji artikla omogućuje pronalazak istog, očitavanje cijene, obračun
 popusta (ukoliko postoji) i uklanjanje iz inventara
