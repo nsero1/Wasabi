@@ -1,0 +1,21 @@
+5. Dependency inversion principle
+Po dependency inversion principle-u, moduli visokog nivoa ne bi trebali zavisiti od modula niskog nivoa, vec bi oba trebala 
+zavisiti od apstrakcija.
+Ovo prakticno znaci da klase (visokog nivoa) ne bi trebale koristiti druge klase(nizeg nivoa) direktno, vec kroz apstrakcije, tako 
+da klase viseg nivoa ne zavise od detalja implementacije klasa nizeg nivoa.
+
+U nasem vidimo da je u klasi Lista uposlenika ispostovan dependency inversion principle, jer ona ne koristi razlicite 
+implementacije uposlenika (radnik, menadzer, supervizor, itd.) vec neku genericnu klasu Uposlenik iz koje su izvedene sve ostale 
+klase. Ovo omogucava dodatnu fleksibilnost, jer nam ostavlja mogucnost dodavanja novih "vrsta" uposlenika bez promjena u klasi
+Lista uposlenika.
+Jos jedan primjer ispostovanog dependency inversion pricipa je opet u klasi Lista uposlenika, ali ovaj put za klasu Izvjestaj.
+Vaze isti zakljucci kao za klasu Uposlenik, tj. da klasa Lista uposlenika nije ovisna o detaljima klase Izvjestaj, vec  koristi
+genericni izvjestaj iz kojeg su naslijedjeni svi ostali.
+
+Princip nije ispostovan u klasi Logs, koja direktno koristi klasu RegistracijaKarticom i ovisi o detaljima njene implementacije.
+Kada bi se u buducnosti projekat razvijao tako da se dodaju i drugi nacini registracije, to ne bi bilo moguce bez izmjena klase
+logs. Jednostavna ispravka bi bila pravljenje abstraktne klase Registracija, iz koje bi bila naslijedjena klasa 
+RegistracijaKarticom, kao i eventualni dodatni nacini registracije u buducnosti.
+Klasa eksterni uredjaj bi takodjer mogla biti bolje implementirana, tako da se iz nje iskljuce metode vezane za konkretne uredjaje
+(npr. ocitajKarticu), a da se klase konkretnih uredjaja izvedu iz klase EksterniUredjaj. Na ovaj nacin bi bilo omoguceno dodavanje 
+bilo kakvog eksternog uredjaja, bez znatnih promjena u kodu, sto omogucava dodatnu fleksibilnost projekta za buduce nadogradnje.
