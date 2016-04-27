@@ -1,10 +1,10 @@
 5. Dependency inversion principle
 Po dependency inversion principle-u, moduli visokog nivoa ne bi trebali zavisiti od modula niskog nivoa, vec bi oba trebala 
-zavisiti od apstrakcija.
-Ovo prakticno znaci da klase (visokog nivoa) ne bi trebale koristiti druge klase(nizeg nivoa) direktno, vec kroz apstrakcije, tako 
+zavisiti od abstrakcija.
+Ovo prakticno znaci da klase (visokog nivoa) ne bi trebale koristiti druge klase(nizeg nivoa) direktno, vec kroz abstrakcije, tako 
 da klase viseg nivoa ne zavise od detalja implementacije klasa nizeg nivoa.
 
-U nasem vidimo da je u klasi Lista uposlenika ispostovan dependency inversion principle, jer ona ne koristi razlicite 
+U nasem primjeru vidimo da je u klasi Lista uposlenika ispostovan dependency inversion principle, jer ona ne koristi razlicite 
 implementacije uposlenika (radnik, menadzer, supervizor, itd.) vec neku genericnu klasu Uposlenik iz koje su izvedene sve ostale 
 klase. Ovo omogucava dodatnu fleksibilnost, jer nam ostavlja mogucnost dodavanja novih "vrsta" uposlenika bez promjena u klasi
 Lista uposlenika.
