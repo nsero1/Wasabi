@@ -1,0 +1,9 @@
+Princip inverzije ovisnosti
+Uposlenik je bazna klasa koju nasljeđuju: direktor supervizor menadžer i prodavač. Ove 4 klase princip inverzije ovisnosti zadovoljavaju. ( nasljedivanje i detalji su ovisni od apstrakcija) primjer: supervizor i prodavač imaju svoju smjenu i ne utiču na druge. 
+
+Klasu izvještaj nasljeđuju: izvjestajMenadzera izvjestajSupervizora i logs. Prvi dio principa je zadovoljen. Sto se tice drugog dijela principa klasa logs bi se u nekim slučajevima mogla smatrati prenatrpanom tj. ima puno detalja te ako bi dodavali nove tipove uposlenika ne bi mogli mijenjati klasu logs. Ostale klase su smislene i ne treba ih razmatrati dalje. 
+
+
+Liskov princip zamjene 
+
+Kada uposlenik zadovoljava ovaj princip jer poziv sve 3 metode u toj klasi ima smisla za svaku nasljeđenu klasu. Iz klase izvještaj naslijedene su klase izvjestajMenadzera izvjestajSupervizora i Logs. Moze se konstatovati da klasa izvještaj zadovoljava ovaj princip jer poziv bilo koje metode iz klase izvještaj ima smisla za svaku podklasu. Ostale klase nisu naslijedene pa nema smisla razmatrati Liskov princip za njih.
