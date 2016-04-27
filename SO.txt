@@ -1,0 +1,19 @@
+U ovom dijagramu klasa ispoštavan je tzv. princip pojedinaène odgovornosti (eng. Signle Responsibility Principle-SRP).
+Taj princip kaže da pojedine klase treba da znaju samo o jednoj stvari, tj. da imaju samo jedan razlog za eventualnu 
+izmjenu. Da ne bi pojedinaèno provjeravali svaku klasu, uzet æemo za primjer klase Uposlenik i Artikal.
+U klasi Uposlenik imamo atribute ime, prezime, indetifikacioniBroj i nivoPristupa, te metode dajIme, dajPrezime, dajID,
+koje vraæaju ime, prezime i id uposlenika respektivno. Oèito je da ova klasa zna samo za jednu stvar (uposlenika) jer sadrži
+samo atribute i metode koji su usko vezani uz samog uposlenika. Dakle izmjenu ove klase može izazvati samo potreba za promjenom
+Uposlenika direktno i nièega drugog.
+Ako pogledamo klasu Artikal ona sadrži atribute imeArtikla, kolièina, lokacija, opisArtikla, moguænostNarudžbe, cijena, zatim
+metode dajIme, dajKolièinu, dajLokacija, dajOpis, moguæeNaruèiti, èija je svrha oèigledna iz njihovih imena.
+Informacije i moguænosti koje nam ova klasa pruža kroz svoje atribute i metode su kao i u prethodnom primjeru usko vezani za
+Artikal. Slijedi da razlog za promjenu strukture klase može proizaæi samo iz želje da promijenimo sam naèin predstavljanja Artikla, 
+što je sasvim prihvatljivo.
+
+Otvoreno zatvoreni princip (eng. Open Closed Principle-OCP) kaže da entiteti sotfvera (klase, moduli, funkcije) trebaju biti otvoreni
+za nadogradnju, a zatvoreni za modifikacije. To u suštini znaèi da svaki put kada želimo proširiti svoj program ne moramo modifikovati
+èitav kod da bi to uradili, veæ da samo dodamo ono što nam treba, bez da išta staro mijenjamo ili prilagoðavamo.
+Iz navedenog lahko se vidi da ovaj dijagram klasa ne zadovoljava otvoreno zatvoreni princip, jer za proširenje moguænosti bilo koje
+od napravljenih klasa, moramo joj mijenjati strukturu. Da ovaj princip nije zadovoljen moglo se zakljuèiti i iz toga da se u ovom dijagramu
+klasa ne nalazi niti jedan jedini interface ili abstraktna klasa, koji se obièno koriste u svrhu zadovoljavanja OCP principa.
