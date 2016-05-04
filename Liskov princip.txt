@@ -1,4 +1,4 @@
-Kada uposlenik zadovoljava ovaj princip jer poziv sve 3 metode u toj klasi ima smisla za svaku nasljedenu klasu. 
-Iz klase izvještaj naslijedene su klase izvjestajMenadzera izvjestajSupervizora i Logs. Moze se konstatovati da 
+Klasa uposlenik zadovoljava ovaj princip jer poziv sve 3 metode u toj klasi ima smisla za svaku nasljedenu klasu. 
+Iz klase izvještaj naslijedene su klase izvjestaj Menadzera izvjestaj Supervizora i Logs. Moze se konstatovati da 
 klasa izvještaj zadovoljava ovaj princip jer poziv bilo koje metode iz klase izvještaj ima smisla za svaku 
 podklasu. Ostale klase nisu naslijedene pa nema smisla razmatrati Liskov princip za njih.
