@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Prodavnica.DodajUposlenika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Prodavnica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:ConnectionId='1' x:Name="imeUposlenika" HorizontalAlignment="Left" Margin="109,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Ime uposlenika" Height="32" Width="258"/>
+        <TextBox x:ConnectionId='2' x:Name="prezimeUposlenika" HorizontalAlignment="Left" Margin="109,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" PlaceholderText="Prezime uposlenika" Height="31"/>
+        <TextBlock x:ConnectionId='3' x:Name="textBlock" HorizontalAlignment="Left" Height="37" Margin="109,81,0,0" TextWrapping="Wrap" Text="Podaci o uposleniku:" VerticalAlignment="Top" Width="258"/>
+        <ComboBox x:ConnectionId='4' x:Name="pozicijaSelection" HorizontalAlignment="Left" Margin="109,271,0,0" VerticalAlignment="Top" Width="258" PlaceholderText="Pozicija"                                             >
+            <ComboBoxItem x:ConnectionId='12' Name="Prodavac">Prodavac</ComboBoxItem>
+            <ComboBoxItem x:ConnectionId='13' Name="Supervizor">Supervizor</ComboBoxItem>
+            <ComboBoxItem x:ConnectionId='14' Name="Menadzer">Menadzer</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:ConnectionId='5' x:Name="smjenaSelection" HorizontalAlignment="Left" Height="30" Margin="109,308,0,0" VerticalAlignment="Top" Width="258" RenderTransformOrigin="-0.703,-0.784" Visibility="Collapsed">
+            <ComboBoxItem x:ConnectionId='9' Name="Jutarnja">Jutarnja</ComboBoxItem>
+            <ComboBoxItem x:ConnectionId='10' Name="Popodnevna">Popodnevna</ComboBoxItem>
+            <ComboBoxItem x:ConnectionId='11' Name="Nocna">Nocna</ComboBoxItem>
+        </ComboBox>
+        <Button x:ConnectionId='6' x:Name="button" Content="Dodaj uposlenika" HorizontalAlignment="Left" Margin="109,343,0,0" VerticalAlignment="Top" Width="167"                     />
+        <TextBox x:ConnectionId='7' x:Name="korisnickoIme" HorizontalAlignment="Left" Height="29" Margin="109,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" PlaceholderText="Korisnicko ime"/>
+        <TextBox x:ConnectionId='8' x:Name="sifra" HorizontalAlignment="Left" Height="30" Margin="109,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" PlaceholderText="Sifra"/>
+
+    </Grid>
+</Page>
+

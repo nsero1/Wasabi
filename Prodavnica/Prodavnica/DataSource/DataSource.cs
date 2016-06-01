@@ -34,6 +34,13 @@ namespace Prodavnica.DataSource
                     Kod = "F1",
                     Podstranica = typeof(PrikazInventara)
                 });
+                ProdavacStavke.Add(new MeniStavka()
+                {
+                    MeniStavkaId = 5,
+                    Naziv = "GPS pracenje dostave",
+                    Kod = "F5",
+                    Podstranica = typeof(GpsDostava)
+                });
 
                 SupervizorStavke.AddRange(ProdavacStavke);
                 MenadzerStavke.AddRange(SupervizorStavke);
