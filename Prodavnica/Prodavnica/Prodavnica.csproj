@@ -105,6 +105,9 @@
     <Compile Include="GpsDostava.xaml.cs">
       <DependentUpon>GpsDostava.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IzmijeniUposlenika.xaml.cs">
+      <DependentUpon>IzmijeniUposlenika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -165,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GpsDostava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IzmijeniUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

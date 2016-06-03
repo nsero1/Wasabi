@@ -43,6 +43,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontWeight" />
       <RootEvent Name="Tapped" />
@@ -54,6 +55,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Name" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
@@ -85,6 +87,11 @@
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Prodavnica.GpsDostava" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="Prodavnica.IzmijeniUposlenika" />
     <RootType FullName="Prodavnica.Login" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
