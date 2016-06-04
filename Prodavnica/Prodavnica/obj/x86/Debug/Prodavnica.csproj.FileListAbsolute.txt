@@ -711,3 +711,30 @@ C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\obj\x
 C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\obj\x86\Debug\EntityFramework.Commands\en-US\EntityFramework.Commands.Strings.resw
 C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\obj\x86\Debug\Prodavnica.csproj.GenerateResource.Cache
 C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\obj\x86\Debug\Prodavnica.csprojResolveAssemblyReference.cache
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\EntityFramework.Commands.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\EntityFramework.Commands.xml
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\IzmijeniUposlenika.xbf
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\EntityFramework.Core.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\EntityFramework.Relational.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\EntityFramework.Sqlite.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\System.Interactive.Async.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\sqlite3.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Caching.Abstractions.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Caching.Memory.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Configuration.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Configuration.Abstractions.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Configuration.Binder.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.DependencyInjection.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.DependencyInjection.Abstractions.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Logging.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.Logging.Abstractions.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Microsoft.Framework.OptionsModel.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Remotion.Linq.dll
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\IzmijeniUposlenika.g.i.cs
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\IzmijeniUposlenika.g.cs
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\IzmijeniUposlenika.xaml
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\IzmijeniUposlenika.xbf
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\Prodavnica.csproj.GenerateResource.Cache

@@ -21,6 +21,7 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootEvent Name="KeyDown" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>

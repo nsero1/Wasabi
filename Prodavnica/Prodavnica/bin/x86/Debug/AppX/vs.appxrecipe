@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>462462e0-1133-44af-9fad-09519fe10e38</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>03B5B82E1648555E63E56E97CDEFE8171CFB86E56A1DFF647CCF201EBD4598A4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>462462e0-1133-44af-9fad-09519fe10e38_1.0.0.0_x86__0psc655esj7ew</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>462462e0-1133-44af-9fad-09519fe10e38_0psc655esj7ew!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-04T02:49:00.330</Modified>
+      <Modified>2016-06-04T12:31:15.325</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.exe">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.exe">
       <PackagePath>entrypoint\Prodavnica.exe</PackagePath>
-      <Modified>2016-06-04T02:49:00.052</Modified>
+      <Modified>2016-06-04T12:31:14.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -530,45 +530,45 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\rszTruck.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\rszTruck.png">
       <PackagePath>Assets\rszTruck.png</PackagePath>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-06-03T12:41:58.000</Modified>
     </AppxPackagedFile>
@@ -580,21 +580,21 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.xr.xml">
       <PackagePath>Prodavnica.xr.xml</PackagePath>
-      <Modified>2016-06-03T23:24:15.823</Modified>
+      <Modified>2016-06-04T12:31:13.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-05-05T01:43:27.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-04T01:32:31.786</Modified>
+      <Modified>2016-06-04T12:31:15.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Desktop\OOADponesta\umri tebra\Prodavnica\Prodavnica\bin\x86\Debug\Core\Prodavnica.exe">
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\Prodavnica.exe">
       <PackagePath>Prodavnica.exe</PackagePath>
-      <Modified>2016-06-04T02:49:00.325</Modified>
+      <Modified>2016-06-04T12:31:15.315</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -48,5 +48,13 @@ namespace Prodavnica
                 await dialog.ShowAsync();
             }
         }
+
+        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if(e.Key == Windows.System.VirtualKey.Enter)
+            {
+                logInButton_Click(sender, new RoutedEventArgs());
+            }
+        }
     }
 }
