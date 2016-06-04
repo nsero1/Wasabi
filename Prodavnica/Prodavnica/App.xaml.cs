@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prodavnica.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Data.Entity;
 
 namespace Prodavnica
 {
@@ -33,6 +35,12 @@ namespace Prodavnica
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new ProdavnicaDbContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultPodaciBaze.Initialize(db);
+                DataSource.DataSource.Data.pDbC = db;
+            }
         }
 
         /// <summary>

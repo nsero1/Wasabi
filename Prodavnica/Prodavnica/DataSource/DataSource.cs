@@ -11,6 +11,7 @@ namespace Prodavnica.DataSource
     {
         public class Data
         {
+            public static ProdavnicaDbContext pDbC;
             public static ListaUposlenika ListaUposlenika;
             public static Dictionary<NivoPristupa, List<MeniStavka>> Stavke;
             public static Inventar Inventar;

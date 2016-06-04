@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -64,11 +65,13 @@ namespace Prodavnica.Models
             else noviUposlenik.ID = uposlenici.Max(r => r.ID) + 1;
 
             uposlenici.Add(noviUposlenik);
+            UpdateBazuUposlenika();
         }
 
         public void dodajUposlenika(Uposlenik noviUposlenik)
         {
             uposlenici.Add(noviUposlenik);
+            UpdateBazuUposlenika();
         }
 
         void testniUposlenici()
@@ -80,7 +83,44 @@ namespace Prodavnica.Models
         public ListaUposlenika()
         {
             uposlenici = new List<Uposlenik>();
-            testniUposlenici();
+            //testniUposlenici();
+            PovuciIzBaze();
+            UpdateBazuUposlenika();
+        }
+        public void UpdateBazuUposlenika() //ti ostalo kad budes radio samo na kraju update bazu
+        {
+            DataSource.DataSource.Data.pDbC.Database.ExecuteSqlCommand("delete from Prodavac");
+            //DataSource.DataSource.Data.pDbC.Prodavaci.RemoveRange(DataSource.DataSource.Data.pDbC.Prodavaci);
+            DataSource.DataSource.Data.pDbC.SaveChanges();
+            //DataSource.DataSource.Data.pDbC.Direktori.RemoveRange(DataSource.DataSource.Data.pDbC.Direktori);
+            DataSource.DataSource.Data.pDbC.Database.ExecuteSqlCommand("delete from Direktor");
+            DataSource.DataSource.Data.pDbC.SaveChanges();
+            //DataSource.DataSource.Data.pDbC.Menadzeri.RemoveRange(DataSource.DataSource.Data.pDbC.Menadzeri);
+            DataSource.DataSource.Data.pDbC.Database.ExecuteSqlCommand("delete from Menadzer");
+            DataSource.DataSource.Data.pDbC.SaveChanges();
+            //DataSource.DataSource.Data.pDbC.Supervizori.RemoveRange(DataSource.DataSource.Data.pDbC.Supervizori);
+            DataSource.DataSource.Data.pDbC.Database.ExecuteSqlCommand("delete from Supervizor");
+            DataSource.DataSource.Data.pDbC.SaveChanges();
+            /*List<Direktor> lokDir = new List<Direktor>();
+            foreach (Uposlenik up in uposlenici)
+            {
+                if (up is Direktor)
+                    lokDir.Add((Direktor)up);
+            }*/
+            DataSource.DataSource.Data.pDbC.Uposlenici.AddRange(uposlenici);
+            DataSource.DataSource.Data.pDbC.SaveChanges();
+            DataSource.DataSource.Data.pDbC = new ProdavnicaDbContext();
+
+        }
+
+        public void PovuciIzBaze()
+        {
+            uposlenici.Clear();
+            uposlenici.AddRange(DataSource.DataSource.Data.pDbC.Prodavaci.ToList());
+            uposlenici.AddRange(DataSource.DataSource.Data.pDbC.Direktori.ToList());
+            uposlenici.AddRange(DataSource.DataSource.Data.pDbC.Supervizori.ToList());
+            uposlenici.AddRange(DataSource.DataSource.Data.pDbC.Menadzeri.ToList());
+            DataSource.DataSource.Data.pDbC = new ProdavnicaDbContext();
         }
     }
 }

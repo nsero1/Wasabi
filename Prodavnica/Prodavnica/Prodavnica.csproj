@@ -114,8 +114,18 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160603233853_InitialMigration.cs" />
+    <Compile Include="Migrations\20160603233853_InitialMigration.designer.cs">
+      <DependentUpon>20160603233853_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20160604013050_ViewModelfazoni2.cs" />
+    <Compile Include="Migrations\20160604013050_ViewModelfazoni2.designer.cs">
+      <DependentUpon>20160604013050_ViewModelfazoni2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ProdavnicaDbContextModelSnapshot.cs" />
     <Compile Include="Models\Artikal.cs" />
     <Compile Include="Models\ArtikalZaProdaju.cs" />
+    <Compile Include="Models\DefaultPodaciBaze.cs" />
     <Compile Include="Models\Direktor.cs" />
     <Compile Include="Models\Inventar.cs" />
     <Compile Include="Models\ListaUposlenika.cs" />
@@ -124,6 +134,7 @@
     <Compile Include="Models\NivoPristupa.cs" />
     <Compile Include="Models\Pozicija.cs" />
     <Compile Include="Models\Prodavac.cs" />
+    <Compile Include="Models\ProdavnicaDbContext.cs" />
     <Compile Include="Models\Smjena.cs" />
     <Compile Include="Models\Supervizor.cs" />
     <Compile Include="Models\Uposlenik.cs" />
