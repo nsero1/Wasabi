@@ -30,5 +30,8 @@ namespace Prodavnica.Models
             catch (Exception) { }
             oB.UseSqlite($"Data source={dbpath}");
         }
-    }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        { //jedno od polja je image da se zna šta je zapravo predstavlja byte[] 
+            modelBuilder.Entity<Artikal>().Property(p => p.Slika).HasColumnType("image"); }
+        }
 }

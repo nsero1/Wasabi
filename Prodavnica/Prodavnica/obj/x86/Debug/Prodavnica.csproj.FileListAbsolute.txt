@@ -1275,3 +1275,8 @@ D:\OOAD najnoviji\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.g
 D:\OOAD najnoviji\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.xaml
 D:\OOAD najnoviji\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.xbf
 D:\OOAD najnoviji\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\PretragaInventara.xbf
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.g.i.cs
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.g.cs
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.xaml
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\PretragaInventara.xbf
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\PretragaInventara.xbf

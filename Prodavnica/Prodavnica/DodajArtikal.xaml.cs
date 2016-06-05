@@ -48,13 +48,29 @@ namespace Prodavnica
             this.InitializeComponent();
         }
 
-        private void dodajArtikal_Click(object sender, RoutedEventArgs e)
+        private async void dodajArtikal_Click(object sender, RoutedEventArgs e)
         {
             Artikal noviArtikal = new Artikal();
 
             noviArtikal.NazivArtikla = nazivArtikla.Text;
             noviArtikal.CijenaArtikla = Double.Parse(cijenaArtikla.Text);
+            var byteArray = new byte[1];
+            try
+            {
+                using (var inputStream = await storeFile.OpenSequentialReadAsync())
+                {
+                    var readStream = inputStream.AsStreamForRead();
 
+                     byteArray = new byte[readStream.Length];
+                    await readStream.ReadAsync(byteArray, 0, byteArray.Length);
+                }
+            noviArtikal.Slika = byteArray;
+            }
+            catch (Exception)
+            {
+
+               
+            }
             DataSource.DataSource.Data.Inventar.dodajArtikal(noviArtikal, Int32.Parse(brojArtikala.Text));
         }
 

@@ -14,6 +14,7 @@ namespace Prodavnica.Models
         public int ID { get; set; }
         public string NazivArtikla { get; set; }
         public double CijenaArtikla { get; set;}
-        public string OpisArtikla { get; set; }        
+        public string OpisArtikla { get; set; }
+        public byte[] Slika { get; set; }//slika       
     }
 }
