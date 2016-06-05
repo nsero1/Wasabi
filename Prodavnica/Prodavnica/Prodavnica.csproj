@@ -125,6 +125,10 @@
     <Compile Include="Migrations\20160604013050_ViewModelfazoni2.designer.cs">
       <DependentUpon>20160604013050_ViewModelfazoni2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160605220257_slika.cs" />
+    <Compile Include="Migrations\20160605220257_slika.Designer.cs">
+      <DependentUpon>20160605220257_slika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ProdavnicaDbContextModelSnapshot.cs" />
     <Compile Include="Models\Artikal.cs" />
     <Compile Include="Models\ArtikalZaProdaju.cs" />
