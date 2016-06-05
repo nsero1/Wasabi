@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-05T21:18:18.918</Modified>
+      <Modified>2016-06-05T21:22:31.776</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.exe">
       <PackagePath>entrypoint\Prodavnica.exe</PackagePath>
-      <Modified>2016-06-05T21:18:17.805</Modified>
+      <Modified>2016-06-05T21:22:31.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +582,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.xr.xml">
       <PackagePath>Prodavnica.xr.xml</PackagePath>
-      <Modified>2016-06-05T21:14:00.944</Modified>
+      <Modified>2016-06-05T21:22:30.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-05T21:18:18.345</Modified>
+      <Modified>2016-06-05T21:22:31.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\Prodavnica.exe">
       <PackagePath>Prodavnica.exe</PackagePath>
-      <Modified>2016-06-05T21:18:18.915</Modified>
+      <Modified>2016-06-05T21:22:31.773</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

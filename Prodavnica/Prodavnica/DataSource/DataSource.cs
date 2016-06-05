@@ -30,10 +30,10 @@ namespace Prodavnica.DataSource
 
                 ProdavacStavke.Add(new MeniStavka()
                 {
-                    MeniStavkaId = 2,
-                    Naziv = "Prikaz inventara",
-                    Kod = "F1",
-                    Podstranica = typeof(PrikazInventara)
+                    MeniStavkaId = 6,
+                    Naziv = "Pomoc",
+                    Kod = "F6",
+                    Podstranica = typeof(Help)
                 });
                 ProdavacStavke.Add(new MeniStavka()
                 {
@@ -41,6 +41,13 @@ namespace Prodavnica.DataSource
                     Naziv = "GPS pracenje dostave",
                     Kod = "F5",
                     Podstranica = typeof(GpsDostava)
+                });
+                ProdavacStavke.Add(new MeniStavka()
+                {
+                    MeniStavkaId = 2,
+                    Naziv = "Prikaz inventara",
+                    Kod = "F1",
+                    Podstranica = typeof(PrikazInventara)
                 });
 
                 SupervizorStavke.AddRange(ProdavacStavke);
