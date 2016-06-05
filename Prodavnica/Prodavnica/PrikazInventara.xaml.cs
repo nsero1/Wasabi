@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Prodavnica.Models;
 using Prodavnica.ViewModels;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -35,8 +36,15 @@ namespace Prodavnica
 
             prikazInventara.ItemsSource = artikalView;
         }
-                                          
 
-    
+        private async void prikazInventara_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            nazivArtikla.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].Artikal.NazivArtikla;
+            cijena.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].Artikal.CijenaArtikla.ToString();
+            brojDostupnih.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].BrojDostupnihArtikala.ToString();
+
+            DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
+        }
     }
 }

@@ -132,7 +132,7 @@ namespace Prodavnica.Prodavnica_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[12];
             _typeNameTable[0] = "Prodavnica.DodajArtikal";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -142,10 +142,11 @@ namespace Prodavnica.Prodavnica_XamlTypeInfo
             _typeNameTable[6] = "Prodavnica.IzmijeniUposlenika";
             _typeNameTable[7] = "Prodavnica.Login";
             _typeNameTable[8] = "Prodavnica.MainPage";
-            _typeNameTable[9] = "Prodavnica.PrikazInventara";
-            _typeNameTable[10] = "Prodavnica.PrikazUposlenika";
+            _typeNameTable[9] = "Prodavnica.PretragaInventara";
+            _typeNameTable[10] = "Prodavnica.PrikazInventara";
+            _typeNameTable[11] = "Prodavnica.PrikazUposlenika";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[12];
             _typeTable[0] = typeof(global::Prodavnica.DodajArtikal);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -155,8 +156,9 @@ namespace Prodavnica.Prodavnica_XamlTypeInfo
             _typeTable[6] = typeof(global::Prodavnica.IzmijeniUposlenika);
             _typeTable[7] = typeof(global::Prodavnica.Login);
             _typeTable[8] = typeof(global::Prodavnica.MainPage);
-            _typeTable[9] = typeof(global::Prodavnica.PrikazInventara);
-            _typeTable[10] = typeof(global::Prodavnica.PrikazUposlenika);
+            _typeTable[9] = typeof(global::Prodavnica.PretragaInventara);
+            _typeTable[10] = typeof(global::Prodavnica.PrikazInventara);
+            _typeTable[11] = typeof(global::Prodavnica.PrikazUposlenika);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -198,8 +200,9 @@ namespace Prodavnica.Prodavnica_XamlTypeInfo
         private object Activate_6_IzmijeniUposlenika() { return new global::Prodavnica.IzmijeniUposlenika(); }
         private object Activate_7_Login() { return new global::Prodavnica.Login(); }
         private object Activate_8_MainPage() { return new global::Prodavnica.MainPage(); }
-        private object Activate_9_PrikazInventara() { return new global::Prodavnica.PrikazInventara(); }
-        private object Activate_10_PrikazUposlenika() { return new global::Prodavnica.PrikazUposlenika(); }
+        private object Activate_9_PretragaInventara() { return new global::Prodavnica.PretragaInventara(); }
+        private object Activate_10_PrikazInventara() { return new global::Prodavnica.PrikazInventara(); }
+        private object Activate_11_PrikazUposlenika() { return new global::Prodavnica.PrikazUposlenika(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -268,16 +271,23 @@ namespace Prodavnica.Prodavnica_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Prodavnica.PrikazInventara
+            case 9:   //  Prodavnica.PretragaInventara
                 userType = new global::Prodavnica.Prodavnica_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_PrikazInventara;
+                userType.Activator = Activate_9_PretragaInventara;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Prodavnica.PrikazUposlenika
+            case 10:   //  Prodavnica.PrikazInventara
                 userType = new global::Prodavnica.Prodavnica_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_PrikazUposlenika;
+                userType.Activator = Activate_10_PrikazInventara;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Prodavnica.PrikazUposlenika
+                userType = new global::Prodavnica.Prodavnica_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_PrikazUposlenika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

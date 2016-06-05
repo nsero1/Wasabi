@@ -141,6 +141,9 @@
     <Compile Include="Models\Smjena.cs" />
     <Compile Include="Models\Supervizor.cs" />
     <Compile Include="Models\Uposlenik.cs" />
+    <Compile Include="PretragaInventara.xaml.cs">
+      <DependentUpon>PretragaInventara.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrikazInventara.xaml.cs">
       <DependentUpon>PrikazInventara.xaml</DependentUpon>
     </Compile>
@@ -200,6 +203,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PretragaInventara.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PrikazInventara.xaml">
       <SubType>Designer</SubType>

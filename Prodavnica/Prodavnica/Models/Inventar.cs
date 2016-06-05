@@ -30,6 +30,14 @@ namespace Prodavnica.Models
             UpdateBazuArtikala();
         }
 
+        public ArtikalZaProdaju dajArtikalPoNazivu(string naziv)
+        {
+            foreach (ArtikalZaProdaju k in Artikli)
+                if (k.Artikal.NazivArtikla == naziv) return k;
+
+            return null;
+        }
+
         public Inventar()
         {
             Artikli = new List<ArtikalZaProdaju>();

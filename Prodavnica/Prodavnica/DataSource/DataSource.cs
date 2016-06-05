@@ -50,6 +50,14 @@ namespace Prodavnica.DataSource
                     Podstranica = typeof(PrikazInventara)
                 });
 
+                ProdavacStavke.Add(new MeniStavka()
+                {
+                    MeniStavkaId = 5,
+                    Naziv = "Pretraga inventara",
+                    Kod = "F5",
+                    Podstranica = typeof(PretragaInventara)
+                });
+
                 SupervizorStavke.AddRange(ProdavacStavke);
                 MenadzerStavke.AddRange(SupervizorStavke);
 
