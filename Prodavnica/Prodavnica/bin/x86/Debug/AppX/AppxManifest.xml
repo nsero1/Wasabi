@@ -33,7 +33,9 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="internetClientServer" />
+    <uap:Capability Name="picturesLibrary" />
     <DeviceCapability Name="location" />
+    <DeviceCapability Name="webcam" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />

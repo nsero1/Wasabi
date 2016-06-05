@@ -51,6 +51,9 @@ namespace Prodavnica
 
             DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
 
+            //prikazUposlenika.ItemsSource = null;
+            prikazUposlenika.ItemsSource = DataSource.DataSource.Data.ListaUposlenika.uposlenici;
+
             var dialog = new MessageDialog("Podaci izmijenjeni!");
             await dialog.ShowAsync();
         }
@@ -67,6 +70,9 @@ namespace Prodavnica
             DataSource.DataSource.Data.ListaUposlenika.uposlenici.RemoveAt(prikazUposlenika.SelectedIndex);
 
             DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
+
+            //prikazUposlenika.ItemsSource = null;
+            prikazUposlenika.ItemsSource = DataSource.DataSource.Data.ListaUposlenika.uposlenici;
 
             var dialog = new MessageDialog("Uposlenik obrisan!");
             await dialog.ShowAsync();

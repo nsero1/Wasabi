@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -38,20 +39,60 @@ namespace Prodavnica
                 smjenaSelection.Visibility = Visibility.Collapsed;
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
             Uposlenik noviUposlenik;
 
-            if (pozicijaSelection.SelectedIndex == 0)            
-                noviUposlenik = new Prodavac();            
+            if (imeUposlenika.Text == "")
+            {
+                var dialog1 = new MessageDialog("Niste unijeli ime uposlenika!");
+                await dialog1.ShowAsync();
+                return;
+            }
+            if (prezimeUposlenika.Text == "")
+            {
+                var dialog1 = new MessageDialog("Niste unijeli prezime uposlenika!");
+                await dialog1.ShowAsync();
+                return;
+            }
+            if (korisnickoIme.Text == "")
+            {
+                var dialog1 = new MessageDialog("Niste unijeli korisnicko ime uposlenika!");
+                await dialog1.ShowAsync();
+                return;
+            }
+            if (sifra.Text == "")
+            {
+                var dialog1 = new MessageDialog("Niste unijeli sifru uposlenika!");
+                await dialog1.ShowAsync();
+                return;
+            }
+
+            if(pozicijaSelection.SelectedItem == null)
+            {
+                var dialog1 = new MessageDialog("Niste izabrali poziciju uposlenika!");
+                await dialog1.ShowAsync();
+                return;
+            }
+
+
+            if (pozicijaSelection.SelectedIndex == 0)
+                noviUposlenik = new Prodavac();
             else if (pozicijaSelection.SelectedIndex == 1)
                 noviUposlenik = new Supervizor();
             else noviUposlenik = new Menadzer();
 
             Smjena smjena;
 
-            if((noviUposlenik is Prodavac))
+            if ((noviUposlenik is Prodavac))
             {
+                if (smjenaSelection.SelectedItem == null)
+                {
+                    var dialog1 = new MessageDialog("Niste izabrali smjenu uposlenika!");
+                    await dialog1.ShowAsync();
+                    return;
+                }
+
                 if (smjenaSelection.SelectedIndex == 0) smjena = Smjena.Jutarnja;
                 else if (smjenaSelection.SelectedIndex == 1) smjena = Smjena.Popodnevna;
                 else smjena = Smjena.Nocna;
@@ -60,6 +101,13 @@ namespace Prodavnica
             }
             else if ((noviUposlenik is Supervizor))
             {
+                if (smjenaSelection.SelectedItem == null)
+                {
+                    var dialog1 = new MessageDialog("Niste izabrali smjenu uposlenika!");
+                    await dialog1.ShowAsync();
+                    return;
+                }
+
                 if (smjenaSelection.SelectedIndex == 0) smjena = Smjena.Jutarnja;
                 else if (smjenaSelection.SelectedIndex == 1) smjena = Smjena.Popodnevna;
                 else smjena = Smjena.Nocna;
@@ -73,6 +121,15 @@ namespace Prodavnica
             noviUposlenik.Sifra = sifra.Text;
 
             DataSource.DataSource.Data.ListaUposlenika.dodajUposlenika(noviUposlenik);
+            DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
+
+            imeUposlenika.Text = "";
+            prezimeUposlenika.Text = "";
+            korisnickoIme.Text = "";
+            sifra.Text = "";
+
+            var dialog = new MessageDialog("Uposlenik uspjesno dodan!");
+            await dialog.ShowAsync();
         }
     }
 }
