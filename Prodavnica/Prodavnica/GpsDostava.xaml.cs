@@ -35,6 +35,9 @@ namespace Prodavnica
             this.InitializeComponent();
             mapMeine.Loaded += MyMap_Loaded;
             mapMeine.Tag = false;
+            TimerCallback oU = new TimerCallback(ocitajUdaljenost);
+            AutoResetEvent aRE = new AutoResetEvent(false);
+            timica = new Timer(oU, aRE, Timeout.Infinite, Timeout.Infinite);
         }
         Geolocator rajvosa = new Geolocator();
         Tuple<double, double> pozicijaUredjaja = new Tuple<double, double>(0, 0);
@@ -75,9 +78,8 @@ namespace Prodavnica
             });
             mapIk2.Image = novaslika;
             mapMeine.MapElements.Add(mapIk2);
-            TimerCallback oU = new TimerCallback(ocitajUdaljenost);
-            AutoResetEvent aRE = new AutoResetEvent(false);
-            timica = new Timer(oU, aRE, 1000, 1000);
+            if ((bool)mapMeine.Tag) mapMeine.MapElements.RemoveAt(1);
+            timica.Change(1000, 1000);
 
         }
 
@@ -87,10 +89,10 @@ namespace Prodavnica
                new Geopoint(new BasicGeoposition()
                {
                    //Geopoint for Sarajevo 
-                   Latitude = 43.85,
-                   Longitude = 18.38
+                   Latitude = 43.92,
+                   Longitude = 19.1
                });
-            mapMeine.ZoomLevel = 15;
+            mapMeine.ZoomLevel = 10;
         }
         private void mapMeine_Loaded(object sender, RoutedEventArgs e)
         {
@@ -122,7 +124,7 @@ namespace Prodavnica
             await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
                 if ((bool)mapMeine.Tag) mapMeine.MapElements.RemoveAt(1);
-                koordinateTextBlock.Text = "Udaljenost izmedju uredjaja i radnje je " + DistanceTo(pozicijaUredjaja.Item1, pozicijaUredjaja.Item2, lat, lon).ToString("0.00") + "km zracne linije.";
+                koordinateTextBlock.Text = "Udaljenost izmedju dostavljaca i uredjaja je " + DistanceTo(pozicijaUredjaja.Item1, pozicijaUredjaja.Item2, lat, lon).ToString("0.00") + "km zracne linije.";
                 MapIcon mapIkona = new MapIcon();
                 mapIkona.Location = new Geopoint(new BasicGeoposition
                 {
@@ -141,7 +143,12 @@ namespace Prodavnica
 
         private void zaustaviButton_Click(object sender, RoutedEventArgs e)
         {
-            timica.Change(Timeout.Infinite, Timeout.Infinite);
+            try
+            {
+                timica.Change(Timeout.Infinite, Timeout.Infinite);
+            }
+            catch (Exception) { }
+
         }
     }
 }

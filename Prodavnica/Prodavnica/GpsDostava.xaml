@@ -10,13 +10,17 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="73*" />
+            <RowDefinition Height="514*"/>
+            <RowDefinition Height="53*" />
         </Grid.RowDefinitions>
-        <TextBlock x:Name="koordinateTextBlock" Text="00" Tapped="koordinateTextBlock_Tapped" Grid.Row="2" />
-        <Button Margin="20,20,0,0" Click="Button_Click" Content="Racunaj udaljenost"/>
+        <TextBlock x:Name="koordinateTextBlock" Text="" Tapped="koordinateTextBlock_Tapped" Grid.Row="2" />
+        <StackPanel Orientation="Horizontal" >
+            <AppBarSeparator Width="20"/>
+            <Button Click="Button_Click" Content="Racunaj udaljenost" Height="32" Width="145" />
+            <AppBarSeparator Width="60"/>
+            <Button x:Name="zaustaviButton" Content="Zaustavi" Click="zaustaviButton_Click" Height="32" Width="75"/>
+        </StackPanel>
         <Maps:MapControl Grid.Row="1" Name="mapMeine" Loaded="mapMeine_Loaded" Margin="10,10,10,10" />
-        <Button Name="zaustaviButton" Content="Zaustavi" HorizontalAlignment="Left" Margin="276,48,0,0" VerticalAlignment="Top" Click="zaustaviButton_Click"/>
     </Grid>
 </Page>

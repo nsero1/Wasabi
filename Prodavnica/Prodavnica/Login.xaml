@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.485,0.508" KeyDown="Grid_KeyDown">
-        <TextBox x:Name="korisnickoImeTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="552,177,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Korisnicko ime"/>
-        <TextBox x:Name="sifraTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="552,222,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Sifra"/>
-        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="602,285,0,0" Click="logInButton_Click"/>
+        <TextBox x:Name="korisnickoImeTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="59,28,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Korisnicko ime"/>
+        <TextBox x:Name="sifraTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="59,73,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Sifra"/>
+        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,136,0,0" Click="logInButton_Click"/>
 
     </Grid>
 </Page>

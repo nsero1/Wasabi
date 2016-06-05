@@ -996,3 +996,9 @@ D:\OOAD2\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\qualifiers.txt
 D:\OOAD2\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\qualifiers.txt.intermediate
 D:\OOAD2\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\OOAD2\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\EntityFramework.Core\en-US\EntityFramework.Core.Strings.resw
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\EntityFramework.Relational\en-US\EntityFramework.Relational.Strings.resw
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\EntityFramework.Sqlite\en-US\EntityFramework.Sqlite.Strings.resw
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\Microsoft.Data.Sqlite\en-US\Microsoft.Data.Sqlite.Strings.resw
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\Microsoft.Framework.Configuration\en-US\Microsoft.Framework.Configuration.Resources.resw
+C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\EntityFramework.Commands\en-US\EntityFramework.Commands.Strings.resw
