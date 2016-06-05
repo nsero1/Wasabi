@@ -9,13 +9,8 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>462462e0-1133-44af-9fad-09519fe10e38</PackageIdentityName>
-<<<<<<< HEAD
-    <IntermediateOutputPath>D:\OOAD2\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>4B229EEAB9D2073A9E2906BE9DA937BDC9FE2BDD00EAA1037058FDD0F0296277</RegisteredManifestChecksum>
-=======
     <IntermediateOutputPath>C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>8DD8CE6D197E5ACAD925AF0807BD407AB38019C06868BB80415403B46B0CB5A1</RegisteredManifestChecksum>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+    <RegisteredManifestChecksum>C04294FA0AEC7A1946BEB20E78C5CA0A6A906B8369B76C1A374806F38667888F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>462462e0-1133-44af-9fad-09519fe10e38_1.0.0.0_x86__0psc655esj7ew</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>462462e0-1133-44af-9fad-09519fe10e38_0psc655esj7ew!App</RegisteredUserModeAppID>
     <RegisteredPackageID>462462e0-1133-44af-9fad-09519fe10e38</RegisteredPackageID>
@@ -27,21 +22,13 @@
     <AppXManifest Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-06-05T20:53:50.655</Modified>
-=======
-      <Modified>2016-06-05T20:30:14.885</Modified>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+      <Modified>2016-06-05T21:18:18.918</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.exe">
       <PackagePath>entrypoint\Prodavnica.exe</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-06-05T20:53:50.319</Modified>
-=======
-      <Modified>2016-06-05T20:30:13.271</Modified>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+      <Modified>2016-06-05T21:18:17.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -595,11 +582,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Prodavnica.xr.xml">
       <PackagePath>Prodavnica.xr.xml</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-06-05T20:40:02.479</Modified>
-=======
-      <Modified>2016-06-05T20:28:09.035</Modified>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+      <Modified>2016-06-05T21:14:00.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -607,19 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-06-05T20:40:04.528</Modified>
-=======
-      <Modified>2016-06-05T20:30:14.596</Modified>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+      <Modified>2016-06-05T21:18:18.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\bin\x86\Debug\Core\Prodavnica.exe">
       <PackagePath>Prodavnica.exe</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-06-05T20:53:50.653</Modified>
-=======
-      <Modified>2016-06-05T20:30:14.875</Modified>
->>>>>>> 7ae9d8685e7c7b6d728fbd826ae23ca577cfda6d
+      <Modified>2016-06-05T21:18:18.915</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
