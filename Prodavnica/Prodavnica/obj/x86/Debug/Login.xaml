@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Prodavnica.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Prodavnica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.485,0.508"                       >
+        <TextBox x:ConnectionId='2' x:Name="korisnickoImeTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="552,177,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Korisnicko ime"/>
+        <TextBox x:ConnectionId='3' x:Name="sifraTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="552,222,0,0" Width="160" Height="32" VerticalAlignment="Top" PlaceholderText="Sifra"/>
+        <Button x:ConnectionId='4' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="602,285,0,0"                          />
+
+    </Grid>
+</Page>
+
