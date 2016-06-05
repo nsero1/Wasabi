@@ -76,7 +76,7 @@ namespace Prodavnica.Models
 
         void testniUposlenici()
         {
-            dodajUposlenika("Ajdin", "Hrelja", "Ahrelja", "1234", Pozicija.Direktor);
+            //dodajUposlenika("Ajdin", "Hrelja", "Ahrelja", "1234", Pozicija.Direktor);
             dodajUposlenika("Emir", "Hrelja", "Ehrelja", "1234", Pozicija.Prodavac);
         }
 
@@ -110,7 +110,6 @@ namespace Prodavnica.Models
             DataSource.DataSource.Data.pDbC.Uposlenici.AddRange(uposlenici);
             DataSource.DataSource.Data.pDbC.SaveChanges();
             DataSource.DataSource.Data.pDbC = new ProdavnicaDbContext();
-
         }
 
         public void PovuciIzBaze()

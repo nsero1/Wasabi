@@ -8,19 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="prikazUposlenika" HorizontalAlignment="Left" Height="457" Margin="0,10,0,0" VerticalAlignment="Top" Width="414">
+        <ListView x:Name="prikazUposlenika" HorizontalAlignment="Left" Height="457" Margin="0,10,0,0" VerticalAlignment="Top" Width="414" SelectionChanged="prikazUposlenika_SelectionChanged">
             <ListView.ItemTemplate>
-                <DataTemplate>                    
+                <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock xml:space="preserve"  Text="Ime: " />
-                        <TextBlock xml:space="preserve" Text="{Binding Ime}" FontWeight="Bold" />
-                        <TextBlock xml:space="preserve" Text=" " FontWeight="Bold" />
-                        <TextBlock xml:space="preserve" Text="{Binding Prezime}" FontWeight="Bold" />
-                        
+                        <TextBlock xml:space="preserve" Padding="2" Text="Ime: " />
+                        <TextBlock xml:space="preserve" Padding="2" Text="{Binding Ime}" FontWeight="Bold" />                        
+                        <TextBlock xml:space="preserve" Padding="2" Text="{Binding Prezime}" FontWeight="Bold" />
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <TextBox x:Name="imeUposlenika" HorizontalAlignment="Left" Margin="636,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
+        <TextBlock x:Name="txtBlock" HorizontalAlignment="Left" Height="28" Margin="487,32,0,0" TextWrapping="Wrap" Text="Ime: " VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="24" Margin="487,74,0,0" TextWrapping="Wrap" Text="Prezime: 
+                   " VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="prezimeUposlenika" HorizontalAlignment="Left" Height="23" Margin="636,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="28" Margin="487,126,0,0" TextWrapping="Wrap" Text="Korisnicko ime: " VerticalAlignment="Top" Width="121"/>
+        <TextBox x:Name="korisnickoIme" HorizontalAlignment="Left" Height="21" Margin="636,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="izmijeniPodatke" Content="Izmijeni" HorizontalAlignment="Left" Margin="636,168,0,0" VerticalAlignment="Top" Width="171" Click="izmijeniPodatke_Click"/>
+        <Button x:Name="button" Content="Obrisi" HorizontalAlignment="Left" Margin="636,205,0,0" VerticalAlignment="Top" Width="171" Click="button_Click"/>
 
     </Grid>
 </Page>
