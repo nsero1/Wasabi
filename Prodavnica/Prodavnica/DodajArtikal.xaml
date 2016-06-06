@@ -14,7 +14,7 @@
         <Button x:Name="dodajArtikal" Content="Dodaj artikal" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="182" Click="dodajArtikal_Click"/>
         <TextBox x:Name="cijenaArtikla" HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" PlaceholderText="Cijena"/>
         <Image x:Name="captureImage" HorizontalAlignment="Left" Height="260" Margin="490,49,0,0" VerticalAlignment="Top" Width="286"/>
-        <Button x:Name="captureBtn" Content="Button" HorizontalAlignment="Left" Margin="616,348,0,0" VerticalAlignment="Top" Click="captureBtn_Click"/>
+        <Button x:Name="captureBtn" Content="Uslikaj artikal" HorizontalAlignment="Left" Margin="262,203,0,0" VerticalAlignment="Top" Click="captureBtn_Click"/>
 
     </Grid>
 </Page>

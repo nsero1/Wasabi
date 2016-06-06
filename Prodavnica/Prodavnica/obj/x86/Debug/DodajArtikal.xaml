@@ -14,7 +14,7 @@
         <Button x:ConnectionId='4' x:Name="dodajArtikal" Content="Dodaj artikal" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="182"                           />
         <TextBox x:ConnectionId='5' x:Name="cijenaArtikla" HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" PlaceholderText="Cijena"/>
         <Image x:ConnectionId='6' x:Name="captureImage" HorizontalAlignment="Left" Height="260" Margin="490,49,0,0" VerticalAlignment="Top" Width="286"/>
-        <Button x:ConnectionId='7' x:Name="captureBtn" Content="Button" HorizontalAlignment="Left" Margin="616,348,0,0" VerticalAlignment="Top"                         />
+        <Button x:ConnectionId='7' x:Name="captureBtn" Content="Uslikaj artikal" HorizontalAlignment="Left" Margin="262,203,0,0" VerticalAlignment="Top"                         />
 
     </Grid>
 </Page>
