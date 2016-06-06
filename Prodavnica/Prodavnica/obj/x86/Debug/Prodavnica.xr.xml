@@ -104,6 +104,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="MapServiceToken" />
       <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator">

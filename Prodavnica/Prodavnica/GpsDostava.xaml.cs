@@ -69,7 +69,7 @@ namespace Prodavnica
         {
             Geoposition pozi = await rajvosa.GetGeopositionAsync();
             pozicijaUredjaja = new Tuple<double, double>(pozi.Coordinate.Point.Position.Latitude, pozi.Coordinate.Point.Position.Longitude);
-            RandomAccessStreamReference novaslika = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/StoreLogo.png"));
+            RandomAccessStreamReference novaslika = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/rszRadnjica.png"));
             MapIcon mapIk2 = new MapIcon();
             mapIk2.Location = new Geopoint(new BasicGeoposition
             {
@@ -131,7 +131,7 @@ namespace Prodavnica
                     Latitude = lat,/*pozi.Coordinate.Point.Position.Latitude,*/
                     Longitude = lon//pozi.Coordinate.Point.Position.Longitude
                 });
-                RandomAccessStreamReference novaslika = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/rszTruck.png"));
+                RandomAccessStreamReference novaslika = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/rszPlane.png"));
                 mapIkona.Image = novaslika;
                 mapMeine.MapElements.Add(mapIkona);
                 mapMeine.Tag = true;

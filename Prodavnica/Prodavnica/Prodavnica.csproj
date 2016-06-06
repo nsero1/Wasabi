@@ -166,6 +166,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\faliSlika.png" />
+    <Content Include="Assets\rszPlane.png" />
+    <Content Include="Assets\rszRadnjica.png" />
     <Content Include="Assets\rszTruck.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

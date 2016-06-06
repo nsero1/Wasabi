@@ -399,6 +399,12 @@
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\faliSlika.png">
       <PackagePath>Assets\faliSlika.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\rszPlane.png">
+      <PackagePath>Assets\rszPlane.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\rszRadnjica.png">
+      <PackagePath>Assets\rszRadnjica.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\rszTruck.png">
       <PackagePath>Assets\rszTruck.png</PackagePath>
     </AppxPackagedFile>

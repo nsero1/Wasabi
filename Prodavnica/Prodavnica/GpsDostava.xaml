@@ -21,6 +21,6 @@
             <AppBarSeparator Width="60"/>
             <Button x:Name="zaustaviButton" Content="Zaustavi" Click="zaustaviButton_Click" Height="32" Width="75"/>
         </StackPanel>
-        <Maps:MapControl Grid.Row="1" Name="mapMeine" Loaded="mapMeine_Loaded" Margin="10,10,10,10" />
+        <Maps:MapControl Grid.Row="1" Name="mapMeine" Loaded="mapMeine_Loaded" Margin="10,10,10,10" MapServiceToken=" NFOdUMyQDRIH7htzElik~fJpQjr0WCA6-HBxXYlQJSQ~AsuAt0sNyqqbzzF5rDO2MkilA43k01S0c6C1fTFAZkcNN8wjV-7_Qnb0eNOd6YaB" />
     </Grid>
 </Page>
