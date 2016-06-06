@@ -1,1 +1,1 @@
-D:\OOAD najnajnoviji\Wasabi\Prodavnica\Prodavnica\Prodavnica.csproj;x86
+C:\Users\mesud\Desktop\Wasabi\Prodavnica\Prodavnica\Prodavnica.csproj;x86

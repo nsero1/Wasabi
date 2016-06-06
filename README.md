@@ -1,4 +1,4 @@
-# Wasabi
+﻿# Wasabi
 Clanovi tima:                   
 1. Ajdin Hrelja                                  
 2. Mesud Pestek                   
@@ -73,3 +73,10 @@ mjesečni izvještaj koji proslijeđuje direktoru.
 * Direktor - Osoba sa najvišim pristupom. On ima mogućnost unosa novih zaposlenika, 
 te uklanjanje starih, kao i sve ostale privilegije. Ima uvid u primjedbe/prijedloge
 koje dobija od supervizora i u izvještaj koji mu šalje menadžer.
+
+# Eksterni uređaji koji su korišteni:
+-Kamera, https://github.com/ooad-2015-2016/Wasabi/blob/master/Prodavnica/Prodavnica/DodajArtikal.xaml.cs
+
+# Validacija ispoštovana pri unosu uposlenika, https://github.com/ooad-2015-2016/Wasabi/blob/master/Prodavnica/Prodavnica/DodajUposlenika.xaml.cs
+
+# Mobilna funkcionalnost koja se koristi je GPS, https://github.com/ooad-2015-2016/Wasabi/blob/master/Prodavnica/Prodavnica/GpsDostava.xaml.cs
