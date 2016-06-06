@@ -25,6 +25,7 @@
         <TextBlock x:ConnectionId='5' x:Name="cijena" HorizontalAlignment="Left" Height="27" Margin="512,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
         <TextBlock x:ConnectionId='6' x:Name="textBlock2" HorizontalAlignment="Left" Height="30" Margin="383,76,0,0" TextWrapping="Wrap" Text="Broj dostupnih:" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.594,-1.091"/>
         <TextBlock x:ConnectionId='7' x:Name="brojDostupnih" HorizontalAlignment="Left" Height="31" Margin="512,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+        <Image x:ConnectionId='8' Name="slikica" Margin="383,111,715,440"/>
     </Grid>
 </Page>
 

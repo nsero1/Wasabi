@@ -396,6 +396,9 @@
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\faliSlika.png">
+      <PackagePath>Assets\faliSlika.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rasim Kaleta\Wasabi\Prodavnica\Prodavnica\Assets\rszTruck.png">
       <PackagePath>Assets\rszTruck.png</PackagePath>
     </AppxPackagedFile>

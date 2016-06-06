@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Navigation;
 using Prodavnica.Models;
 using Prodavnica.ViewModels;
 using Windows.UI.Popups;
+using Windows.Storage.Streams;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -43,8 +45,25 @@ namespace Prodavnica
             nazivArtikla.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].Artikal.NazivArtikla;
             cijena.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].Artikal.CijenaArtikla.ToString();
             brojDostupnih.Text = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].BrojDostupnihArtikala.ToString();
-
-            DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
+            var byteArray = DataSource.DataSource.Data.Inventar.Artikli[prikazInventara.SelectedIndex].Artikal.Slika;
+            var image = new BitmapImage();
+            try
+            {
+                using (InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream())
+                {
+                    using (DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0)))
+                    {
+                        writer.WriteBytes(byteArray);
+                        await writer.StoreAsync();
+                    }
+                    await image.SetSourceAsync(stream);
+                }
+                slikica.Source = image;
+            }
+            catch (Exception) {
+                slikica.Source = new BitmapImage(new Uri("ms-appx:///Assets/faliSlika.png"));
+            }
+            //DataSource.DataSource.Data.ListaUposlenika.UpdateBazuUposlenika();
         }
     }
 }
